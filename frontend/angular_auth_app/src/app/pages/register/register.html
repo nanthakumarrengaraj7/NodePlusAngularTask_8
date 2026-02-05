@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="card col-md-5 mx-auto shadow">
+    <div class="card-body">
+
+      <h4 class="text-center mb-3">Register</h4>
+
+      <input class="form-control mb-2" placeholder="Name" [(ngModel)]="name">
+
+      <input class="form-control mb-2" placeholder="Email" [(ngModel)]="email">
+
+      <input type="password" class="form-control mb-2" placeholder="Password" [(ngModel)]="password">
+      
+      <button class="btn btn-success w-100" (click)="register()">
+        Register
+      </button>
+
+      <p class="text-success text-center mt-2">{{ message }}</p>
+      <p class="text-danger text-center mt-2">{{ error }}</p>
+
+      <p class="text-center mt-3">
+        Already have an account?
+        <a routerLink="/login">Login</a>
+      </p>
+    </div>
+  </div>
+</div>
